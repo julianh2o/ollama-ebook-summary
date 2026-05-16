@@ -156,3 +156,4 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         input_csv = sys.argv[1]
         process_csv(input_csv)
+
