@@ -98,8 +98,8 @@ def process_csv(input_file):
             previous_chunk = None
             
             for row in reader:
-                title = re.sub(r'^[0-9]+-', '', row['Title'])
-                text = row['Text']
+                title = re.sub(r'^[0-9]+-', '', row['title'])
+                text = row['text']
                 char_count = len(text)
 
                 # If text is empty, store title and continue
@@ -156,4 +156,3 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         input_csv = sys.argv[1]
         process_csv(input_csv)
-
